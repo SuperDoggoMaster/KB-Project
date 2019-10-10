@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="444.0" prefWidth="692.0" style="-fx-background-color: #520808;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <AnchorPane layoutX="425.0" layoutY="21.0" prefHeight="379.0" prefWidth="240.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <JFXPasswordField layoutX="42.0" layoutY="190.0" prefHeight="25.0" prefWidth="157.0" promptText="Password" unFocusColor="#4d4d4dbf">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="0.007662835249042145" />
+                        <Stop color="BLACK" offset="0.2911877394636015" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+            </JFXPasswordField>
+            <Label layoutX="41.0" layoutY="72.0" prefHeight="35.0" prefWidth="100.0" text="Login:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="41.0" layoutY="129.0" prefHeight="25.0" prefWidth="157.0" promptText="Username/E-mail" unFocusColor="#4d4d4dbf">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.004761904761904762">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="0.41379310344827586" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="254.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #990303;" text="Let's Go!" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="0.007662835249042145" />
+                        <Stop color="BLACK" offset="0.3908045977011493" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="152.0" layoutY="300.0" text="Sing Up" textFill="#2760e3" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="444.0" fitWidth="420.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

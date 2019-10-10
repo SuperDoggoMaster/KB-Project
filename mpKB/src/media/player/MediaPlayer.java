@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package media.plaayer;
+package media.player;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,7 +15,7 @@ import javafx.stage.Stage;
  *
  * @author Aluno
  */
-public class MediaPlaayer extends Application {
+public class MediaPlayer extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {

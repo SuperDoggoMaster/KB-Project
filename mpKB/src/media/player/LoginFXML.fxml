@@ -4,6 +4,7 @@
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -27,7 +28,7 @@
                   </LinearGradient>
                </focusColor>
             </JFXPasswordField>
-            <Label layoutX="41.0" layoutY="72.0" prefHeight="35.0" prefWidth="100.0" text="Login:">
+            <Label layoutX="41.0" layoutY="67.0" prefHeight="35.0" prefWidth="100.0" text="Login:">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -59,8 +60,12 @@
                </font>
             </JFXButton>
             <Label layoutX="152.0" layoutY="300.0" text="Sing Up" textFill="#2760e3" />
+            <ImageView fitHeight="52.0" fitWidth="42.0" layoutX="171.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/KB.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="444.0" fitWidth="420.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

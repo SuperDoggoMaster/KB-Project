@@ -15,30 +15,53 @@
    <children>
       <AnchorPane layoutX="413.0" layoutY="30.0" prefHeight="379.0" prefWidth="240.0" style="-fx-background-color: #FFFFFF;">
          <children>
-            <JFXPasswordField layoutX="42.0" layoutY="190.0" prefHeight="25.0" prefWidth="157.0" promptText="Password" unFocusColor="#4d4d4dbf">
+            <JFXPasswordField layoutX="42.0" layoutY="190.0" prefHeight="25.0" prefWidth="157.0" promptText="Password">
                <focusColor>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>
                         <Stop color="BLACK" />
                         <Stop color="BLACK" offset="0.007662835249042145" />
                         <Stop color="BLACK" offset="0.2911877394636015" />
-                        <Stop color="WHITE" offset="1.0" />
+                        <Stop color="RED" offset="1.0" />
                      </stops>
                   </LinearGradient>
                </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.004761904761904762">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="0.10810917565272347" />
+                        <Stop color="BLACK" offset="0.41379310344827586" />
+                        <Stop color="BLACK" offset="0.4261168384879725" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
             </JFXPasswordField>
             <Label layoutX="41.0" layoutY="67.0" prefHeight="35.0" prefWidth="100.0" text="Login:">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <JFXTextField layoutX="41.0" layoutY="129.0" prefHeight="25.0" prefWidth="157.0" promptText="Username/E-mail" unFocusColor="#4d4d4dbf">
+            <JFXTextField layoutX="41.0" layoutY="129.0" prefHeight="25.0" prefWidth="157.0" promptText="Username/E-mail">
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="0.007662835249042145" />
+                        <Stop color="BLACK" offset="0.11324406525259706" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
                <focusColor>
                   <LinearGradient endX="1.0" endY="1.0" startX="0.004761904761904762">
                      <stops>
                         <Stop color="BLACK" />
-                        <Stop color="BLACK" offset="0.41379310344827586" />
-                        <Stop color="WHITE" offset="1.0" />
+                        <Stop color="BLACK" offset="0.09578544061302681" />
+                        <Stop color="BLACK" offset="0.10546273255125016" />
+                        <Stop color="BLACK" offset="0.10850416716040603" />
+                        <Stop color="RED" offset="1.0" />
                      </stops>
                   </LinearGradient>
                </focusColor>
@@ -65,6 +88,16 @@
                </image>
             </ImageView>
             <Label layoutX="41.0" layoutY="300.0" text="Forgot Password?" textFill="#2760e3" />
+            <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="180.0" layoutY="339.0">
+               <image>
+                  <Image url="@../../../../../../Downloads/Design%20sem%20nome%20(6).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="141.0" layoutY="339.0">
+               <image>
+                  <Image url="@../../../../../../Downloads/Design%20sem%20nome%20(7).png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <Label layoutX="52.0" layoutY="174.0" prefHeight="35.0" prefWidth="268.0" text="Welcome to KB Player!" textFill="WHITE">

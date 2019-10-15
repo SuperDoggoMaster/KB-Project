@@ -8,6 +8,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
@@ -15,24 +16,21 @@
    <children>
       <AnchorPane layoutX="413.0" layoutY="30.0" prefHeight="379.0" prefWidth="240.0" style="-fx-background-color: #FFFFFF;">
          <children>
-            <JFXPasswordField layoutX="42.0" layoutY="190.0" prefHeight="25.0" prefWidth="157.0" promptText="Password">
+            <JFXPasswordField layoutX="42.0" layoutY="188.0" prefHeight="25.0" prefWidth="157.0" promptText="Senha">
                <focusColor>
-                  <LinearGradient endX="1.0" endY="1.0">
+                  <LinearGradient endX="1.0" endY="0.8047619047619048" startY="0.30952380952380953">
                      <stops>
-                        <Stop color="BLACK" />
-                        <Stop color="BLACK" offset="0.007662835249042145" />
-                        <Stop color="BLACK" offset="0.2911877394636015" />
-                        <Stop color="RED" offset="1.0" />
+                        <Stop color="RED" />
+                        <Stop color="RED" offset="0.007662835249042145" />
+                        <Stop color="#f19c9c" offset="1.0" />
                      </stops>
                   </LinearGradient>
                </focusColor>
                <unFocusColor>
                   <LinearGradient endX="1.0" endY="1.0" startX="0.004761904761904762">
                      <stops>
-                        <Stop color="BLACK" />
-                        <Stop color="BLACK" offset="0.10810917565272347" />
-                        <Stop color="BLACK" offset="0.41379310344827586" />
-                        <Stop color="BLACK" offset="0.4261168384879725" />
+                        <Stop color="GREY" />
+                        <Stop color="GREY" offset="0.007662835249042145" />
                         <Stop color="WHITE" offset="1.0" />
                      </stops>
                   </LinearGradient>
@@ -43,51 +41,45 @@
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <JFXTextField layoutX="41.0" layoutY="129.0" prefHeight="25.0" prefWidth="157.0" promptText="Username/E-mail">
+            <JFXTextField layoutX="40.0" layoutY="131.0" prefHeight="25.0" prefWidth="157.0" promptText="Nome de usuário/E-mail">
                <unFocusColor>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>
-                        <Stop color="BLACK" />
-                        <Stop color="BLACK" offset="0.007662835249042145" />
-                        <Stop color="BLACK" offset="0.11324406525259706" />
+                        <Stop color="GREY" />
                         <Stop color="WHITE" offset="1.0" />
                      </stops>
                   </LinearGradient>
                </unFocusColor>
                <focusColor>
-                  <LinearGradient endX="1.0" endY="1.0" startX="0.004761904761904762">
+                  <LinearGradient endX="1.0" endY="0.7047619047619048" startY="0.3857142857142857">
                      <stops>
-                        <Stop color="BLACK" />
-                        <Stop color="BLACK" offset="0.09578544061302681" />
-                        <Stop color="BLACK" offset="0.10546273255125016" />
-                        <Stop color="BLACK" offset="0.10850416716040603" />
-                        <Stop color="RED" offset="1.0" />
+                        <Stop color="RED" />
+                        <Stop color="#f19c9c" offset="1.0" />
                      </stops>
                   </LinearGradient>
                </focusColor>
             </JFXTextField>
-            <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="254.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #990303;" text="Let's Go!" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+            <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="247.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #990303;" text="Entrar" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
                <ripplerFill>
-                  <LinearGradient endX="1.0" endY="1.0">
+                  <RadialGradient centerX="0.4944444444444445" centerY="0.5095238095238095" radius="0.5">
                      <stops>
-                        <Stop color="BLACK" />
-                        <Stop color="BLACK" offset="0.007662835249042145" />
-                        <Stop color="BLACK" offset="0.3908045977011493" />
-                        <Stop color="WHITE" offset="1.0" />
+                        <Stop color="RED" />
+                        <Stop color="RED" offset="0.49808429118773934" />
+                        <Stop color="#eb2a2a" offset="1.0" />
                      </stops>
-                  </LinearGradient>
+                  </RadialGradient>
                </ripplerFill>
                <font>
                   <Font size="13.0" />
                </font>
             </JFXButton>
-            <Label layoutX="158.0" layoutY="300.0" text="Sing Up" textFill="#2760e3" />
+            <Label layoutX="149.0" layoutY="300.0" text="Registrar-se!" textFill="#2760e3" />
             <ImageView fitHeight="52.0" fitWidth="42.0" layoutX="171.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../Downloads/KB.png" />
                </image>
             </ImageView>
-            <Label layoutX="41.0" layoutY="300.0" text="Forgot Password?" textFill="#2760e3" />
+            <Label layoutX="24.0" layoutY="300.0" text="Esqueceu a Senha?" textFill="#2760e3" />
             <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="180.0" layoutY="339.0">
                <image>
                   <Image url="@../../../../../../Downloads/Design%20sem%20nome%20(6).png" />
@@ -100,13 +92,13 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Label layoutX="52.0" layoutY="174.0" prefHeight="35.0" prefWidth="268.0" text="Welcome to KB Player!" textFill="WHITE">
+      <Label layoutX="52.0" layoutY="174.0" prefHeight="35.0" prefWidth="286.0" text="Bem-vindo ao KB player!" textFill="WHITE">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="69.0" layoutY="202.0" text="We hope you enjoy it!" textFill="WHITE" />
-      <ImageView fitHeight="407.0" fitWidth="370.0" layoutX="-1.0" layoutY="37.0">
+      <Label layoutX="69.0" layoutY="202.0" text="Esperamos que goste!" textFill="WHITE" />
+      <ImageView fitHeight="407.0" fitWidth="370.0" layoutY="37.0">
          <image>
             <Image url="@../../../../../../Downloads/Design%20sem%20nome%20(4).png" />
          </image>
